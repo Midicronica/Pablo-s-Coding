@@ -1,0 +1,18 @@
+#To import a the random MODULE
+import random
+
+gameMode = input("Let's Toto! QP, Sys7 or Sys8? " )
+
+if gameMode == "QP":
+  x = random.sample(range(1,42), 6)
+#for x in range(6):
+# print(random.randint(1,42))
+
+
+if gameMode == "Sys7":
+  x = random.sample(range(1,42), 7)
+
+if gameMode == "Sys8":
+  x = random.sample(range(1,42), 8)
+x.sort() #using sort to make ascending/descending
+print(x)
