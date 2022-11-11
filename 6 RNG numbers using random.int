@@ -1,0 +1,28 @@
+import random
+
+num1 = random.randint(1,42)
+num2 = random.randint(1,42)
+num3 = random.randint(1,42)
+num4 = random.randint(1,42)
+num5 = random.randint(1,42)
+num6 = random.randint(1,42)
+
+if num2 == num1:
+    num2 = random.randint(1,42)
+if num3 == num1 or num3 == num2:
+    num3 = random.randint(1,42)
+if num4 == num1 or num4 == num2 or num4 == num3:
+    num4 = random.randint(1,42)
+if num5 == num1 or num5 == num2 or num5 == num3 or num5 == num4:
+    num5 = random.randint(1,42)
+if num6 == num1 or num6 == num2 or num6 == num3 or num6 == num4 or num6 == num5:
+    num6 = random.randint(1,42)
+
+nums = [num1, num2, num3, num4, num5, num6]
+nums.sort()
+#print("Do you want to play QP?")
+#answer = input()
+#if answer == "Yes":
+print("Your RNG numbers are: ", nums)
+
+    
